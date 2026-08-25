@@ -1,5 +1,5 @@
 # 💫 About Me:
-Software Engineering enthusiast with expertise in Java, Spring Boot, MySQL, REST APIs, Git/GitHub, and DSA. I enjoy designing efficient solutions, developing backend applications, and learning modern software engineering practices. Currently focused on strengthening problem-solving skills and building industry-ready projects for SDE roles.
+Software Engineering enthusiast with expertise in Java, Spring Boot, JavaScript, React, MySQL, REST APIs, Git/GitHub, and DSA. I enjoy designing efficient solutions, developing backend applications, and learning modern software engineering practices. Currently focused on strengthening problem-solving skills and building industry-ready projects for SDE roles.
 
 
 ## 🌐 Socials:
