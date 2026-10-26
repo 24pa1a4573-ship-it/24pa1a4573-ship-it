@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260" role="img" aria-label="Karthik Meduri - Software Engineer · Full-Stack Developer · Creative Technologist">
+  <title>Karthik Meduri — Software Engineer</title>
+
+  <defs>
+    <linearGradient id="km-bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#100700"/>
+      <stop offset="45%" stop-color="#190812"/>
+      <stop offset="100%" stop-color="#451126"/>
+    </linearGradient>
+    <linearGradient id="km-name-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C77598">
+        <animate attributeName="stop-color" values="#C77598;#F8F0F3;#705A3D;#C77598" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#F8F0F3">
+        <animate attributeName="stop-color" values="#F8F0F3;#C77598;#F8F0F3;#F8F0F3" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#705A3D">
+        <animate attributeName="stop-color" values="#705A3D;#C77598;#F8F0F3;#705A3D" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="km-line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#451126" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#C77598"/>
+      <stop offset="70%" stop-color="#705A3D"/>
+      <stop offset="100%" stop-color="#451126" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="km-orbit-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C77598" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#451126" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="km-name-glow" x="-10%" y="-40%" width="120%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="km-blur1"/>
+      <feFlood flood-color="#C77598" flood-opacity="0.8" result="km-color1"/>
+      <feComposite in="km-color1" in2="km-blur1" operator="in" result="km-glow1"/>
+      <feMerge>
+        <feMergeNode in="km-glow1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="km-accent-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="km-blur2"/>
+      <feFlood flood-color="#C77598" flood-opacity="0.6" result="km-color2"/>
+      <feComposite in="km-color2" in2="km-blur2" operator="in" result="km-glow2"/>
+      <feMerge>
+        <feMergeNode in="km-glow2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="km-grid" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.8" fill="#705A3D" opacity="0.25"/>
+    </pattern>
+    <mask id="km-grid-mask">
+      <rect width="900" height="260" fill="url(#km-grid)"/>
+    </mask>
+  </defs>
+
+  <rect width="900" height="260" fill="url(#km-bg-grad)"/>
+  <rect width="900" height="260" fill="#705A3D" opacity="0.08" mask="url(#km-grid-mask)"/>
+  <line x1="0" y1="1" x2="900" y2="1" stroke="#451126" stroke-width="1" opacity="0.6"/>
+  <line x1="0" y1="259" x2="900" y2="259" stroke="#451126" stroke-width="1" opacity="0.6"/>
+
+  <ellipse cx="820" cy="130" rx="130" ry="130" fill="none" stroke="url(#km-orbit-grad)" stroke-width="0.8" opacity="0.5">
+    <animateTransform attributeName="transform" type="rotate" from="0 820 130" to="360 820 130" dur="28s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="820" cy="130" rx="95" ry="38" fill="none" stroke="#C77598" stroke-width="0.6" opacity="0.35" transform="rotate(-20 820 130)">
+    <animateTransform attributeName="transform" type="rotate" from="-20 820 130" to="340 820 130" dur="18s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="820" cy="130" rx="60" ry="60" fill="none" stroke="#705A3D" stroke-width="0.5" opacity="0.4">
+    <animateTransform attributeName="transform" type="rotate" from="0 820 130" to="-360 820 130" dur="12s" repeatCount="indefinite"/>
+  </ellipse>
+  <circle cx="820" cy="0" r="3" fill="#C77598" filter="url(#km-accent-glow)" opacity="0.85">
+    <animateTransform attributeName="transform" type="rotate" from="0 820 130" to="360 820 130" dur="12s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="950" cy="130" r="2" fill="#705A3D" opacity="0.7">
+    <animateTransform attributeName="transform" type="rotate" from="90 820 130" to="450 820 130" dur="18s" repeatCount="indefinite"/>
+  </circle>
+
+  <line x1="68" y1="60" x2="68" y2="200" stroke="#451126" stroke-width="1.5" opacity="0.7"/>
+  <line x1="66" y1="60" x2="70" y2="60" stroke="#C77598" stroke-width="1.5" opacity="0.9"/>
+  <line x1="66" y1="200" x2="70" y2="200" stroke="#C77598" stroke-width="1.5" opacity="0.9"/>
+  <path d="M 40,60 Q 60,130 40,200" fill="none" stroke="#C77598" stroke-width="1" opacity="0.4">
+    <animate attributeName="opacity" values="0.2;0.6;0.2" dur="4s" repeatCount="indefinite"/>
+  </path>
+
+  <text x="90" y="90" font-family="'Courier New', Courier, monospace" font-size="11" letter-spacing="3.5" fill="#705A3D" opacity="0">
+    MEDURI KARTHIK VENKATA NAGA SAI MANIKANTA
+    <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.3;1" dur="1.5s" fill="freeze"/>
+  </text>
+
+  <text x="90" y="158" font-family="Georgia, 'Times New Roman', serif" font-size="62" font-weight="700" letter-spacing="1" fill="url(#km-name-grad)" filter="url(#km-name-glow)" opacity="0">
+    Karthik Meduri
+    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.4;1" dur="1.8s" fill="freeze"/>
+  </text>
+
+  <rect x="90" y="170" width="0" height="2" rx="1" fill="url(#km-line-grad)" opacity="0.9">
+    <animate attributeName="width" from="0" to="570" dur="1.2s" begin="0.6s" fill="freeze" calcMode="spline" keySplines="0.25 0.46 0.45 0.94"/>
+  </rect>
+  <rect x="90" y="173" width="570" height="1" rx="0.5" fill="url(#km-line-grad)" opacity="0">
+    <animate attributeName="opacity" values="0;0.4;0" dur="3s" begin="1.8s" repeatCount="indefinite"/>
+  </rect>
+
+  <text x="92" y="205" font-family="'Courier New', Courier, monospace" font-size="13.5" letter-spacing="2" fill="#F8F0F3" opacity="0">
+    Software Engineer · Full-Stack Developer · Creative Technologist
+    <animate attributeName="opacity" values="0;0.85;0.85" keyTimes="0;0.5;1" dur="2.5s" fill="freeze"/>
+  </text>
+
+  <text x="92" y="232" font-family="'Courier New', Courier, monospace" font-size="10.5" letter-spacing="1.5" fill="#705A3D" opacity="0">
+    B.Tech AI &amp; Data Science  |  Vishnu Institute of Technology  |  CGPA 9.44
+    <animate attributeName="opacity" values="0;0.75;0.75" keyTimes="0;0.6;1" dur="3s" fill="freeze"/>
+  </text>
+
+  <circle cx="82" cy="155" r="3" fill="#C77598" filter="url(#km-accent-glow)">
+    <animate attributeName="r" values="2;3.5;2" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <rect x="10" y="10" width="18" height="2" fill="#C77598" opacity="0.6"/>
+  <rect x="10" y="10" width="2" height="18" fill="#C77598" opacity="0.6"/>
+  <rect x="872" y="10" width="18" height="2" fill="#705A3D" opacity="0.5"/>
+  <rect x="888" y="10" width="2" height="18" fill="#705A3D" opacity="0.5"/>
+  <rect x="10" y="248" width="18" height="2" fill="#705A3D" opacity="0.5"/>
+  <rect x="10" y="240" width="2" height="18" fill="#705A3D" opacity="0.5"/>
+  <rect x="872" y="248" width="18" height="2" fill="#C77598" opacity="0.6"/>
+  <rect x="888" y="240" width="2" height="18" fill="#C77598" opacity="0.6"/>
+</svg>
