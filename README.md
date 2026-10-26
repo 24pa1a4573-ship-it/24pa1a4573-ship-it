@@ -67,7 +67,8 @@ One of the top teams selected to represent at the inter-college level.
 
 ## Contribution Graph
 
-[![Karthik's GitHub Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=24pa1a4573-ship-it&bg_color=100700&color=C77598&line=451126&point=F8F0F3&area=true&area_color=451126&hide_border=true)](https://github.com/24pa1a4573-ship-it)
+[![Contribution Graph — Dark](https://github-readme-activity-graph.vercel.app/graph?username=24pa1a4573-ship-it&bg_color=0d1117&color=C77598&line=451126&point=F8F0F3&area=true&area_color=451126&hide_border=true#gh-dark-mode-only)](https://github.com/24pa1a4573-ship-it)
+[![Contribution Graph — Light](https://github-readme-activity-graph.vercel.app/graph?username=24pa1a4573-ship-it&bg_color=ffffff&color=451126&line=C77598&point=451126&area=true&area_color=C77598&hide_border=true#gh-light-mode-only)](https://github.com/24pa1a4573-ship-it)
 
 > If the graph above is unavailable, view live contributions directly on [my GitHub profile](https://github.com/24pa1a4573-ship-it).
 
@@ -77,9 +78,11 @@ One of the top teams selected to represent at the inter-college level.
 
 <div align="center">
 
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=24pa1a4573-ship-it&show_icons=true&theme=dark&bg_color=100700&title_color=C77598&icon_color=705A3D&text_color=F8F0F3&border_color=451126&hide_border=false&include_all_commits=true&count_private=false)](https://github.com/24pa1a4573-ship-it)
+[![GitHub Stats — Dark](https://github-readme-stats.vercel.app/api?username=24pa1a4573-ship-it&show_icons=true&theme=dark&bg_color=0d1117&title_color=C77598&icon_color=705A3D&text_color=F8F0F3&border_color=30363d&hide_border=false&include_all_commits=true&count_private=false#gh-dark-mode-only)](https://github.com/24pa1a4573-ship-it)
+[![GitHub Stats — Light](https://github-readme-stats.vercel.app/api?username=24pa1a4573-ship-it&show_icons=true&theme=default&title_color=451126&icon_color=705A3D&text_color=100700&border_color=d0d7de&hide_border=false&include_all_commits=true&count_private=false#gh-light-mode-only)](https://github.com/24pa1a4573-ship-it)
 
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=24pa1a4573-ship-it&layout=compact&theme=dark&bg_color=100700&title_color=C77598&text_color=F8F0F3&border_color=451126&hide_border=false)](https://github.com/24pa1a4573-ship-it?tab=repositories)
+[![Top Languages — Dark](https://github-readme-stats.vercel.app/api/top-langs/?username=24pa1a4573-ship-it&layout=compact&theme=dark&bg_color=0d1117&title_color=C77598&text_color=F8F0F3&border_color=30363d&hide_border=false#gh-dark-mode-only)](https://github.com/24pa1a4573-ship-it?tab=repositories)
+[![Top Languages — Light](https://github-readme-stats.vercel.app/api/top-langs/?username=24pa1a4573-ship-it&layout=compact&theme=default&title_color=451126&text_color=100700&border_color=d0d7de&hide_border=false#gh-light-mode-only)](https://github.com/24pa1a4573-ship-it?tab=repositories)
 
 </div>
 

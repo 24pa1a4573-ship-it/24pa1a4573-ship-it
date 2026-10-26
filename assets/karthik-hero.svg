@@ -54,6 +54,8 @@
     </mask>
   </defs>
 
+  <!-- Solid bg fallback — ensures dark background even if gradients are stripped by camo proxy -->
+  <rect width="900" height="260" fill="#100700"/>
   <rect width="900" height="260" fill="url(#km-bg-grad)"/>
   <rect width="900" height="260" fill="#705A3D" opacity="0.08" mask="url(#km-grid-mask)"/>
   <line x1="0" y1="1" x2="900" y2="1" stroke="#451126" stroke-width="1" opacity="0.6"/>
