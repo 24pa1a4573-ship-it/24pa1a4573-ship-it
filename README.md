@@ -12,9 +12,9 @@
 
 </div>
 
-I build backend systems that scale, frontend experiences that feel right, and ML pipelines that learn. I'm currently deepening my foundations in distributed systems, system design, and cloud-native architecture while shipping real projects along the way.
+I build backend systems that scale, frontend experiences that feel right, and coding problems that learn. I'm currently deepening my foundations in distributed systems, system design, and cloud-native architecture while shipping real projects along the way.
 
-My academic background in AI & ML gives me an edge when working at the intersection of data and software—I understand the engineering side as well as the intelligence layer.
+My academic background in AI & DS gives me an edge when working at the intersection of data and software—I understand the engineering side as well as the intelligence layer.
 
 ---
 
@@ -36,7 +36,7 @@ My academic background in AI & ML gives me an edge when working at the intersect
 <td width="50%">
 
 **Code Slayer Hackathon**  
-One of the top teams selected to represent at the inter-college level.
+One of the top teams selected to participate at the inter-college level.
 
 </td>
 </tr>
@@ -61,7 +61,7 @@ One of the top teams selected to represent at the inter-college level.
 `scikit-learn` `NumPy` `Pandas` `Matplotlib`
 
 **Cloud & DevOps**
-`Google Cloud` `Docker` `Kubernetes` `Vercel` `Git` `GitHub` `GitLab`
+`Google Cloud` `Docker`  `Git` `GitHub` `GitLab`
 
 ---
 
