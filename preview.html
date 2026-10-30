@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<html lang=en>
+<head>
+  <meta charset=UTF-8 />
+  <meta name=viewport content=width=device-width, initial-scale=1.0 />
+  <title>Karthik Meduri — Profile Preview</title>
+  <meta name=description content=Preview of Karthik Meduri GitHub profile README />
+  <link rel=preconnect href=https://fonts.googleapis.com />
+  <link rel=preconnect href=https://fonts.gstatic.com crossorigin />
+  <link href=https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap rel=stylesheet />
+  <style>
+    :root {
+      --bg-base:    #0a0305;
+      --bg-deep:    #100700;
+      --bg-mid:     #190812;
+      --bg-wine:    #451126;
+      --accent:     #C77598;
+      --accent-dim: #9a5070;
+      --gold:       #705A3D;
+      --gold-light: #9a7d55;
+      --off-white:  #F8F0F3;
+      --muted:      #a08898;
+      --border:     rgba(199,117,152,0.18);
+      --border-gold:rgba(112,90,61,0.25);
+      --font-sans:  Inter, system-ui, sans-serif;
+      --font-mono:  JetBrains Mono, Courier New, monospace;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html {
+      background: #0a0305;
+    }
+    body {
+      font-family: var(--font-sans);
+      color: var(--off-white);
+      min-height: 100vh;
+      background-image:
+        radial-gradient(ellipse 120% 60% at 50% 0%, rgba(69,17,38,0.55) 0%, transparent 70%),
+        radial-gradient(ellipse 80% 80% at 80% 50%, rgba(25,8,18,0.80) 0%, transparent 60%),
+        radial-gradient(circle, rgba(112,90,61,0.10) 1px, transparent 1px),
+        linear-gradient(160deg, #0a0305 0%, #100700 40%, #190812 70%, #0a0305 100%);
+      background-size: auto, auto, 28px 28px, auto;
+      overflow-x: hidden;
+    }
+    .page-accent-line {
+      position: fixed; top:0; left:0; right:0; height:2px; z-index:100;
+      background: linear-gradient(90deg, transparent, rgba(199,117,152,0.7) 30%, rgba(199,117,152,1) 50%, rgba(199,117,152,0.7) 70%, transparent);
+      animation: shimmer 4s ease-in-out infinite;
+    }
+    @keyframes shimmer { 0%,100%{opacity:.6} 50%{opacity:1} }
+    .page { max-width: 960px; margin: 0 auto; padding: 48px 24px 0; }
+    .svg-banner {
+      width:100%; display:block; border-radius:12px; overflow:hidden;
+      box-shadow: 0 0 60px rgba(69,17,38,0.55), 0 0 120px rgba(16,7,0,0.45), 0 4px 24px rgba(0,0,0,0.6);
+    }
+    .svg-banner img { width:100%; height:auto; display:block; }
+    .divider {
+      height:1px; margin:36px 0; position:relative;
+      background: linear-gradient(90deg, transparent, rgba(199,117,152,0.45) 20%, rgba(199,117,152,0.75) 50%, rgba(199,117,152,0.45) 80%, transparent);
+    }
+    .divider::after {
+      content:'◆'; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+      color:var(--accent); font-size:10px;
+      background: linear-gradient(160deg,#0a0305,#100700 40%,#190812);
+      padding:0 10px; animation:pulse 3s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:.5} 50%{opacity:1} }
+    .section { margin-bottom:32px; }
+    .section-label { font-family:var(--font-mono); font-size:10px; letter-spacing:3px; color:var(--gold); text-transform:uppercase; margin-bottom:8px; opacity:.8; }
+    h2 {
+      font-size:18px; font-weight:600; color:var(--accent); letter-spacing:.5px; margin-bottom:16px;
+      display:flex; align-items:center; gap:10px;
+    }
+    h2::before { content:''; display:inline-block; width:3px; height:16px; background:linear-gradient(180deg,var(--accent),var(--gold)); border-radius:2px; }
+    .bio {
+      background:linear-gradient(135deg,rgba(69,17,38,0.25),rgba(25,8,18,0.35));
+      border:1px solid var(--border); border-radius:12px; padding:24px 28px;
+      font-size:14px; line-height:1.75; color:var(--muted);
+    }
+    .bio strong { color:var(--off-white); }
+    .edu-tag {
+      display:inline-flex; align-items:center; gap:8px;
+      font-family:var(--font-mono); font-size:11.5px; color:var(--gold-light);
+      background:rgba(112,90,61,0.12); border:1px solid var(--border-gold);
+      border-radius:6px; padding:6px 14px; margin-top:12px;
+    }
+    .edu-tag::before { content:'⌘'; font-size:13px; }
+    .stats-row { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; }
+    .stat-card {
+      background:linear-gradient(135deg,rgba(25,8,18,0.55),rgba(10,3,5,0.60));
+      border:1px solid var(--border); border-radius:12px; padding:18px 20px;
+      display:flex; flex-direction:column; align-items:center; gap:6px;
+      transition:.25s ease;
+    }
+    .stat-card:hover { border-color:rgba(199,117,152,0.4); box-shadow:0 4px 24px rgba(199,117,152,0.1); }
+    .stat-value {
+      font-family:var(--font-mono); font-size:28px; font-weight:700;
+      background:linear-gradient(135deg,var(--accent),var(--gold-light));
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+    }
+    .stat-label { font-size:11px; color:var(--muted); letter-spacing:.5px; text-align:center; }
+    .projects-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; }
+    .project-card {
+      background:linear-gradient(135deg,rgba(69,17,38,0.20),rgba(16,7,0,0.40));
+      border:1px solid var(--border); border-radius:12px; padding:20px 22px;
+      transition:.25s ease;
+    }
+    .project-card:hover { border-color:var(--accent-dim); transform:translateY(-3px); box-shadow:0 8px 32px rgba(199,117,152,0.15); }
+    .project-card h3 { font-size:14px; font-weight:600; color:var(--accent); margin-bottom:6px; }
+    .project-card p  { font-size:12.5px; color:var(--muted); line-height:1.6; margin-bottom:10px; }
+    .stack { font-family:var(--font-mono); font-size:11px; color:var(--gold-light); background:rgba(112,90,61,0.12); border:1px solid var(--border-gold); border-radius:4px; padding:2px 8px; }
+    .achievement {
+      background:linear-gradient(135deg,rgba(69,17,38,0.35),rgba(16,7,0,0.50));
+      border:1px solid rgba(199,117,152,0.22); border-left:3px solid var(--accent);
+      border-radius:6px; padding:18px 22px; font-size:13.5px; color:var(--off-white); line-height:1.65;
+    }
+    .achievement strong { color:var(--accent); }
+    .skill-group { margin-bottom:20px; }
+    .skill-group-label { font-family:var(--font-mono); font-size:11px; color:var(--gold); letter-spacing:1.5px; text-transform:uppercase; margin-bottom:10px; opacity:.85; }
+    .chips { display:flex; flex-wrap:wrap; gap:8px; }
+    .chip {
+      font-family:var(--font-mono); font-size:11.5px; font-weight:500; color:var(--off-white);
+      background:rgba(69,17,38,0.4); border:1px solid rgba(199,117,152,0.25);
+      border-radius:5px; padding:4px 12px; transition:.25s ease;
+    }
+    .chip:hover { background:rgba(199,117,152,0.18); border-color:var(--accent-dim); color:var(--accent); }
+    .graph-placeholder {
+      background:linear-gradient(135deg,rgba(13,17,23,0.85),rgba(10,3,5,0.70));
+      border:1px solid rgba(48,54,61,0.7); border-radius:12px; padding:16px; text-align:center;
+    }
+    .graph-placeholder img { max-width:100%; height:auto; display:block; margin:0 auto; border-radius:8px; }
+    .graph-note { font-size:11px; color:var(--muted); margin-top:10px; font-style:italic; }
+    .badges { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; }
+    .badge {
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(25,8,18,0.6); border:1px solid var(--border);
+      border-radius:9999px; padding:8px 18px; font-size:12.5px; font-weight:500;
+      color:var(--off-white); text-decoration:none; transition:.25s ease;
+    }
+    .badge:hover { border-color:var(--accent-dim); background:rgba(199,117,152,0.12); box-shadow:0 4px 20px rgba(199,117,152,0.15); color:var(--accent); }
+    .center { text-align:center; }
+    .footer-wrap { margin-top:48px; }
+    .page-bottom-pad { height:48px; }
+    @media(max-width:600px){ .page{padding:32px 14px 0;} h2{font-size:15px;} }
+  </style>
+</head>
+<body>
+  <div class=page-accent-line aria-hidden=true></div>
+  <main class=page>
+
+    <section class=svg-banner aria-label=Hero banner>
+      <img src=assets/karthik-hero.svg alt=Karthik Meduri — Software Engineer width=900 />
+    </section>
+
+    <div class=divider aria-hidden=true></div>
+
+    <section class=section aria-labelledby=bio-h>
+      <div class=section-label>// about</div>
+      <div class=bio>
+        <strong>Meduri Karthik Venkata Naga Sai Manikanta</strong><br/><br/>
+        I build backend systems that scale, frontend experiences that feel right, and ML pipelines that learn.
+        I am currently deepening my foundations in distributed systems, system design, and cloud-native architecture
+        while shipping real projects along the way.<br/><br/>
+        My academic background in AI &amp; ML gives me an edge when working at the intersection of data and software.
+        <div class=edu-tag>B.Tech AI &amp; Data Science &nbsp;·&nbsp; Vishnu Institute of Technology &nbsp;·&nbsp; CGPA 9.44</div>
+      </div>
+    </section>
+
+    <div class=divider aria-hidden=true></div>
+
+    <section class=section aria-labelledby=stats-h>
+      <div class=section-label>// metrics</div>
+      <h2 id=stats-h>At a Glance</h2>
+      <div class=stats-row>
+        <div class=stat-card><span class=stat-value>9.44</span><span class=stat-label>CGPA — AI &amp; Data Science</span></div>
+        <div class=stat-card><span class=stat-value>33+</span><span class=stat-label>GitHub Repositories</span></div>
+        <div class=stat-card><span class=stat-value>5+</span><span class=stat-label>Tech Stacks Mastered</span></div>
+        <div class=stat-card><span class=stat-value>1</span><span class=stat-label>Hackathon — Inter-college Rep</span></div>
+      </div>
+    </section>
+
+    <div class=divider aria-hidden=true></div>
+
+    <section class=section aria-labelledby=projects-h>
+      <div class=section-label>// selected projects</div>
+      <h2 id=projects-h>Selected Projects</h2>
+      <div class=projects-grid>
+        <div class=project-card>
+          <h3>DSA-Practice</h3>
+          <p>Structured data structures and algorithms practice with categorised problem sets.</p>
+          <span class=stack>Java</span>
+        </div>
+        <div class=project-card>
+          <h3>ReactBasics</h3>
+          <p>React fundamentals and component architecture — hooks, state, and composition patterns.</p>
+          <span class=stack>JavaScript</span>
+        </div>
+      </div>
+    </section>
+
+    <div class=divider aria-hidden=true></div>
+
+    <section class=section aria-labelledby=ach-h>
+      <div class=section-label>// achievements</div>
+      <h2 id=ach-h>Achievements</h2>
+      <div class=achievement><strong>Code Slayer Hackathon</strong> — One of the top teams selected to represent at the inter-college level.</div>
+    </section>
+
+    <div class=divider aria-hidden=true></div>
+
+    <section class=section aria-labelledby=skills-h>
+      <div class=section-label>// skills</div>
+      <h2 id=skills-h>Tech Stack</h2>
+      <div class=skill-group>
+        <div class=skill-group-label>Languages</div>
+        <div class=chips><span class=chip>Java</span><span class=chip>Python</span><span class=chip>JavaScript</span></div>
+      </div>
+      <div class=skill-group>
+        <div class=skill-group-label>Frontend</div>
+        <div class=chips><span class=chip>React</span><span class=chip>Angular</span></div>
+      </div>
+      <div class=skill-group>
+        <div class=skill-group-label>Backend &amp; Databases</div>
+        <div class=chips><span class=chip>Spring Boot</span><span class=chip>REST APIs</span><span class=chip>MySQL</span><span class=chip>Firebase</span></div>
+      </div>
+      <div class=skill-group>
+        <div class=skill-group-label>ML &amp; Data</div>
+        <div class=chips><span class=chip>scikit-learn</span><span class=chip>NumPy</span><span class=chip>Pandas</span><span class=chip>Matplotlib</span></div>
+      </div>
+      <div class=skill-group>
+        <div class=skill-group-label>Cloud &amp; DevOps</div>
+        <div class=chips><span class=chip>Google Cloud</span><span class=chip>Docker</span><span class=chip>Kubernetes</span><span class=chip>Vercel</span><span class=chip>Git</span><span class=chip>GitHub</span><span class=chip>GitLab</span></div>
+      </div>
+    </section>
+
+    <div class=divider aria-hidden=true></div>
+
+    <section class=section aria-labelledby=graph-h>
+      <div class=section-label>// activity</div>
+      <h2 id=graph-h>Contribution Graph</h2>
+      <div class=graph-placeholder>
+        <img src=https://github-readme-activity-graph.vercel.app/graph?username=24pa1a4573-ship-it&bg_color=0d1117&color=C77598&line=451126&point=F8F0F3&area=true&area_color=451126&hide_border=true alt=Contribution Graph loading=lazy />
+        <p class=graph-note>Live contributions at github.com/24pa1a4573-ship-it</p>
+      </div>
+    </section>
+
+    <div class=divider aria-hidden=true></div>
+
+    <section class=section center aria-labelledby=connect-h>
+      <div class=section-label center>// connect</div>
+      <h2 id=connect-h style=justify-content:center;>Get In Touch</h2>
+      <div class=badges>
+        <a class=badge id=linkedin-badge href=https://www.linkedin.com/in/karthik-meduri target=_blank rel=noopener noreferrer>
+          <svg width=16 height=16 viewBox=0 0 24 24 fill=currentColor aria-hidden=true><path d=M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z/></svg>
+          LinkedIn
+        </a>
+        <a class=badge id=email-badge href=mailto:karthikmeduri09@gmail.com>
+          <svg width=16 height=16 viewBox=0 0 24 24 fill=currentColor aria-hidden=true><path d=M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z/></svg>
+          karthikmeduri09@gmail.com
+        </a>
+        <a class=badge id=github-badge href=https://github.com/24pa1a4573-ship-it target=_blank rel=noopener noreferrer>
+          <svg width=16 height=16 viewBox=0 0 24 24 fill=currentColor aria-hidden=true><path d=M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12/></svg>
+          GitHub
+        </a>
+      </div>
+    </section>
+
+    <div class=divider aria-hidden=true></div>
+
+    <section class=footer-wrap svg-banner aria-label=Footer decoration>
+      <img src=assets/karthik-footer.svg alt=Footer decoration width=900 />
+    </section>
+
+    <div class=page-bottom-pad></div>
+  </main>
+</body>
+</html>
