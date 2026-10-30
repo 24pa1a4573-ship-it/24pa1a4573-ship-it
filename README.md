@@ -35,7 +35,7 @@ My academic background in AI & ML gives me an edge when working at the intersect
 <tr>
 <td width="50%">
 
-**Code Slayer Hackathon**
+**Code Slayer Hackathon**  
 One of the top teams selected to represent at the inter-college level.
 
 </td>
