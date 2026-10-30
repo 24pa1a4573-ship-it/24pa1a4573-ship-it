@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 80" width="900" height="80" role="img" aria-label="Footer decoration">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 90" width="900" height="90" role="img" aria-label="Footer decoration">
   <title>Footer</title>
   <defs>
     <linearGradient id="kf-bg-grad" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -29,52 +29,52 @@
     </pattern>
   </defs>
 
-  <rect width="900" height="80" fill="#100700"/>
-  <rect width="900" height="80" fill="url(#kf-bg-grad)"/>
-  <rect width="900" height="80" fill="url(#kf-dots)"/>
+  <rect width="900" height="90" fill="#100700"/>
+  <rect width="900" height="90" fill="url(#kf-bg-grad)"/>
+  <rect width="900" height="90" fill="url(#kf-dots)"/>
 
   <!-- Top decorative line -->
-  <rect x="0" y="0" width="900" height="1" fill="url(#kf-line-grad)"/>
+  <rect x="0" y="0" width="900" height="1.5" fill="url(#kf-line-grad)"/>
 
   <!-- Main centerline -->
-  <rect x="100" y="38" width="700" height="1" rx="0.5" fill="url(#kf-line-grad)" filter="url(#kf-glow)" opacity="0.7"/>
+  <rect x="100" y="43" width="700" height="1" rx="0.5" fill="url(#kf-line-grad)" filter="url(#kf-glow)" opacity="0.7"/>
 
   <!-- Animated scanning shimmer -->
-  <rect x="-200" y="37" width="200" height="3" rx="1.5" fill="#C77598" opacity="0.25">
+  <rect x="-200" y="42" width="200" height="3" rx="1.5" fill="#C77598" opacity="0.25">
     <animate attributeName="x" from="-200" to="900" dur="4s" repeatCount="indefinite" calcMode="linear"/>
   </rect>
 
   <!-- Center diamond -->
-  <polygon points="450,30 456,38 450,46 444,38" fill="none" stroke="#C77598" stroke-width="1" opacity="0.8">
+  <polygon points="450,35 456,43 450,51 444,43" fill="none" stroke="#C77598" stroke-width="1" opacity="0.8">
     <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
   </polygon>
-  <circle cx="450" cy="38" r="2" fill="#C77598" opacity="0.9">
+  <circle cx="450" cy="43" r="2" fill="#C77598" opacity="0.9">
     <animate attributeName="r" values="1.5;2.5;1.5" dur="3s" repeatCount="indefinite"/>
   </circle>
 
   <!-- Left cluster -->
-  <circle cx="360" cy="38" r="1.5" fill="#705A3D" opacity="0.6"/>
-  <circle cx="375" cy="38" r="1" fill="#451126" opacity="0.5"/>
-  <circle cx="387" cy="38" r="1.5" fill="#705A3D" opacity="0.6"/>
+  <circle cx="360" cy="43" r="1.5" fill="#705A3D" opacity="0.6"/>
+  <circle cx="375" cy="43" r="1" fill="#451126" opacity="0.5"/>
+  <circle cx="387" cy="43" r="1.5" fill="#705A3D" opacity="0.6"/>
 
   <!-- Right cluster -->
-  <circle cx="513" cy="38" r="1.5" fill="#705A3D" opacity="0.6"/>
-  <circle cx="525" cy="38" r="1" fill="#451126" opacity="0.5"/>
-  <circle cx="540" cy="38" r="1.5" fill="#705A3D" opacity="0.6"/>
+  <circle cx="513" cy="43" r="1.5" fill="#705A3D" opacity="0.6"/>
+  <circle cx="525" cy="43" r="1" fill="#451126" opacity="0.5"/>
+  <circle cx="540" cy="43" r="1.5" fill="#705A3D" opacity="0.6"/>
 
   <!-- Left text -->
-  <text x="110" y="42" font-family="'Courier New', Courier, monospace" font-size="9" letter-spacing="2" fill="#705A3D" opacity="0.7">
+  <text x="110" y="48" font-family="'Courier New', Courier, monospace" font-size="12" font-weight="600" letter-spacing="2.5" fill="#C77598" opacity="0.9">
     KARTHIK MEDURI
   </text>
 
   <!-- Right text -->
-  <text x="680" y="42" font-family="'Courier New', Courier, monospace" font-size="9" letter-spacing="2" fill="#705A3D" opacity="0.7" text-anchor="end">
+  <text x="790" y="48" font-family="'Courier New', Courier, monospace" font-size="12" font-weight="600" letter-spacing="2.5" fill="#C77598" opacity="0.9" text-anchor="end">
     github.com/24pa1a4573-ship-it
   </text>
 
   <!-- Corner marks -->
-  <rect x="6" y="6" width="12" height="1" fill="#451126" opacity="0.5"/>
-  <rect x="6" y="6" width="1" height="12" fill="#451126" opacity="0.5"/>
-  <rect x="882" y="6" width="12" height="1" fill="#451126" opacity="0.5"/>
-  <rect x="893" y="6" width="1" height="12" fill="#451126" opacity="0.5"/>
+  <rect x="6" y="6" width="14" height="1.5" fill="#C77598" opacity="0.6"/>
+  <rect x="6" y="6" width="1.5" height="14" fill="#C77598" opacity="0.6"/>
+  <rect x="880" y="6" width="14" height="1.5" fill="#C77598" opacity="0.6"/>
+  <rect x="893" y="6" width="1.5" height="14" fill="#C77598" opacity="0.6"/>
 </svg>
